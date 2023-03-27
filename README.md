@@ -20,3 +20,26 @@ end
 ```
 ## Ensemble Models
 The [Ensemble methods](ensemble_methods.ipynb) snippet provides an example workflow to estimate different ensemble models. The snippet contains sections for 1) setting up a project, including the test-train split, 2) estimation of the models, 3) hyperparameter tuning, and 4) scoring.
+
+### Basic workflow
+```mermaid
+flowchart LR
+subgraph 1[1. Setup]
+    A[Imports]--> B[Test-Train Split]
+end
+subgraph 2[2. Estimation]
+    B--> C[Bagging]
+    B--> D[Gradient Boosting] 
+    B--> E[Random Forest]
+    B--> F[...]
+end
+subgraph 3[3. Tuning]
+    E--> G[Grid Search]
+    D--> G
+    C--> G
+    F--> G
+end
+subgraph 4[4. Scoring]
+    G--> H[Accuracy, Recall, Precision, F1, ...]
+end
+```
