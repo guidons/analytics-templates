@@ -43,3 +43,5 @@ subgraph 4[4. Scoring]
     G--> H[Accuracy, Recall, Precision, F1, ...]
 end
 ```
+## Sklearn Pipelines
+To be continued...
