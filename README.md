@@ -18,3 +18,5 @@ subgraph 3[3. Exploratory Data Analysis - EDA]
     F--> G[Plotting univariate distributions]--> H[Plotting bivariate distributions]
 end
 ```
+## Ensemble Models
+The [Ensemble methods](ensemble_methods.ipynb) snippet provides an example workflow to estimate different ensemble models. The snippet contains sections for 1) setting up a project, including the test-train split, 2) estimation of the models, 3) hyperparameter tuning, and 4) scoring.
